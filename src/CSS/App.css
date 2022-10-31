@@ -1,0 +1,163 @@
+
+.cards{
+    background-color: bisque;
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+/* custom CSS Variables */
+:root{
+    --bg-color: rgb(2, 1, 66);
+    --nav-bar-color: rgb(239, 208, 175);
+    --bg-black-200:white;
+    --bg-black-190: rgb(236, 233, 233);
+    --bg-black-150:#000000;
+    --bg-black-100:#dddddd;
+    --bg-black-50:#eff0f4;
+    --text-black-200:#000000;
+    --text-black-150:#555555;
+    --text-black-100:#666666;
+    --text-black-50:#8a8787;
+    --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+    --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
+    --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+    --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
+    --bg-image: linear-gradient(to right,rgb(198, 165, 135) 20% 50%, white 20% 50%);
+    --text-image: linear-gradient(to left, rgb(14, 45, 75) 0%, rgb(28, 90, 151) 100%);
+}
+body{
+    overflow-x: hidden;
+    background-image: var(--bg-image);
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+/* Start navbar section */
+
+.navMenu{
+    background-color: var(--nav-bar-color);
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    position: static;
+    padding: 1%;
+    margin: 2% 2% 0.5% 2%;
+    z-index: 1;
+}
+
+/* to add a gradient overlay to text with CSS */
+
+.navMenu>.navHead, .navHead{
+    background-image:var(--text-image);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: #2b2c2f;
+    font-size: 42px;
+    margin: auto auto auto 4%;
+    cursor: pointer;
+}
+.navMenu>ul{
+    display: flex;
+    margin: auto auto auto 55%;
+    width: 100%;
+    z-index: 2;
+    color: rgb(245, 245, 242);
+}
+.navMenu>ul>li{
+    margin: auto 2%;
+    background-color: transparent;
+    transition: all ease 0.5s;
+    padding: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    z-index: 3;
+}
+.navMenu>ul>li:hover{
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 2px;
+    background-color: rgb(250, 250, 250);
+    color: rgb(5, 5, 48);
+    transition: all ease 0.3s;
+    z-index: 6;
+}
+.navMenu>ul>li>ul{
+    padding: 0.5%;
+    display: none;
+    position: absolute;
+    top: 11%;
+    right: 20%;
+    color: var(--text-black-50);
+    background-color: var(--nav-bar-color);
+    z-index: -1;
+}
+.navMenu>ul>li>ul>li{
+    margin: 5% auto;
+    transition: all ease 0.3s;
+    padding: 5px;
+    border: 1px solid transparent;
+}
+.navMenu>ul>li>ul>li:hover{
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 2px;
+    background-color: rgb(250, 250, 250);
+    color: rgb(5, 5, 48);
+    transition: all ease 0.3s;
+}
+.menuIcon{
+    display: none;
+}
+
+/* end Navbar section */
+
+.heading{
+    margin : 2% 35% 3% 35%;
+    background-color: rgb(210, 154, 85);
+    padding: 2% 1%;
+    text-align: center;
+    width: 30%;
+    border-radius: 10px;
+}
+@media (max-width:400px){
+    .navMenu>ul.add{
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0%;
+        top: 0%;
+        text-align: center;
+        height: 677px;
+        width: 100%;
+        z-index: 1;
+        color: rgb(245, 245, 242);
+    }
+    .menuIcon{
+        display:block;
+        position: absolute;
+        padding: 4px;
+        z-index: 2;
+        width: 5%;
+        height: auto;
+        border: 2px solid whitesmoke;
+        border-radius: 2px;
+        left: 80vw;
+    }
+    .navMenu>ul{
+        display: none;
+    }
+    .bar{
+        background-color: #0f5cd0ea;
+        width: 100%;
+        height: 3px;
+        margin: 15% 0;
+    }
+}

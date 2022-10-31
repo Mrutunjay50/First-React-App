@@ -1,0 +1,74 @@
+.toDoCont{
+    background-color: cadetblue;
+    display: grid;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.center-div{
+    background-color: aliceblue;
+    margin: 2% 5%;
+    width: 80%;
+    padding: 1% 5%;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px 2px rgb(47, 124, 127);
+}
+
+.center-div>.writeHead>input[type="text"]{
+    width: 96%;
+    background-color: rgba(217, 221, 224, 0.808);
+    padding: 3% 2% 2% 2%;
+    font-size: x-large;
+    color: rgb(81, 78, 78);
+    border: none;
+    border-bottom: 4px solid rgb(24, 23, 23);
+    text-align: center;
+}
+.writeHead{
+    position: relative;
+}
+.HeadToDo{
+    box-sizing: border-box;
+    padding: 3% 0% 3% 40%;
+    font-size: xx-large;
+    background-color: antiquewhite;
+    width: 100%;
+    text-shadow: 1px 3px 3px rgb(36, 35, 35);
+}
+.IconAdd{
+    position: absolute;
+    right: -8%;
+    bottom: 5px;
+    cursor: pointer;
+}.IconAdd:hover{
+    color: yellowgreen;
+}
+.listItems1{
+    padding: 2% 0 1% 0;
+    font-size: xx-large;
+    box-sizing: border-box;
+    word-break: break-all;
+}.SecIcon{
+    margin: 0 3% 0 1%;
+    cursor: pointer;
+    border-radius: 1px;
+}.SecIcon:hover{
+    color: red;
+}
+.Lists{
+    margin-top: 0;
+}
+
+@media (max-width:400px) {
+    .IconAdd{
+        left: 80%;
+        bottom: 55px;
+    }
+    .HeadToDo{
+        padding: 3% 0% 3% 35%;
+        font-size: x-large;
+    }
+    .Lists{
+        margin-top: -50px;
+    }
+}

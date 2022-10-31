@@ -1,0 +1,29 @@
+.Poke{
+    position: relative;
+}
+.mainPoke{
+    margin-bottom: 4%;
+    position: absolute;
+    left: 0px;
+    top: 5vh;
+    width: 44%;
+    background-color: rgba(251, 253, 253, 0.777);
+    padding: 3%;
+    font-size: larger;
+}
+.ShowPoke{
+    /* background-color: aqua; */
+    text-align: left;
+}
+.PokCont{
+    font-size: 15px;
+}
+.allCPoke{
+    padding: 2% 0;
+}
+@media (max-width:400px) {
+    .mainPoke{
+        top: 20vh;
+        width: 94%;
+    }
+}

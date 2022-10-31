@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+
+// import logo from './logo.svg';
+import React from 'react';
+import {Route,Routes} from 'react-router-dom';
+import Navbar from './Components/navbar';
+import {Demm} from './Components/List';
+import Forms from './Components/forms';
+import Accordion from './Components/accordion';
+import GoogleKeep from './Components/GoogleKeepClone/googleKeep';
+import PokeApi from './Components/PokemoN-Api/PokeApi';
+import RouterComp from './RouterComp';
+import './CSS/getPoke.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return(
+  <>
+  <Navbar  />
+  <RouterComp />
+  <Routes>
+    <Route exact path='/' element={<Demm/>} />
+    <Route exact path='/forms' element={<Forms/>} />
+    <Route exact path='/accordion' element={<Accordion/>} />
+    <Route exact path='/googlekeep' element={<GoogleKeep/>} />
+    <Route exact path='/pokemonapi' element={<PokeApi/>} />
+  </Routes>
+
+  </>
   );
 }
+
 
 export default App;

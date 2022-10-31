@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+.clockDiv{
+    /* background-color: brown; */
+    max-width: 220px;
+    display: grid;
+    margin: auto 42% 4% auto;
+}
+.clock{
+    text-align: center;
+    background-color: rgba(16, 14, 14, 0.729);
+    color: white;
+    width: 100%;
+    padding: 8% 1%;
+    font-family: 'orbitron';
+    border-radius: 8px;
+    font-size: x-large;
+  letter-spacing: 4px;
+}
+.cardCont{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5%;
+    margin: 0;
+}
+.cards{
+    position: relative;
+    background-color: azure;
+    /* border-radius: 8px; */
+    flex: 20%;
+    padding: 1% 0%;
+    margin: 1% 2%;
+    display: grid;
+    place-content: center;
+    box-shadow: -5px -5px blue, 10px 10px red, 2px 1px 15px 2px rgb(14, 17, 14);
+}
+.head{
+    position: absolute;
+    bottom: 80px;
+    left: 10%;
+    background-color: rgb(33, 103, 163);
+    padding: 2%;
+    border-radius: 0px 2px 2px 0px;
+    font-family: 'orbitron', sans-serif;
+}
+.card_img{
+    background-color: aqua;
+    width: 250px;
+    height: 450px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.card_img:hover{
+    transform: translate(0px,-20px);
+    transition: all ease 0.5s;
+}
+.title{
+    text-align: center;
+    background-color: #381138;
+    padding: 4% 0%;
+    border-radius: 2px;
+    box-shadow: 1px 0.2px 2px 2px #0a0a0a;
+    font-family: 'orbitron', sans-serif;
+    color: aliceblue;
+    font-weight: 900;
+}
+.SocialItems{
+    display: flex;
+    margin: 3% 30%;
+    width: 40%;
+    text-align: center;
+}
+.SocialItems>li{
+    margin: 2% 2%;
+    cursor: pointer;
+}
+.SocialItems>li:nth-child(1){
+    margin: auto 2% auto 37%;
+    color: aliceblue;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media (max-width:400px) {
+    .clockDiv{
+        margin: auto auto 4% 22%;
+    }
+    .SocialItems{
+        margin: auto 12%;
+    }
+    .SocialItems>li{
+        margin: 10% 8%;
+    }
+    .cards{
+        padding: 2.5% 0%;
+        margin: 3% 2%;
+    }
+    .head{
+        left: 12%;
+    }  
+    .cardCont{ 
+    padding: 2%;
+    margin: 0;
+    }
+}

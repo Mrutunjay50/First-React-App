@@ -1,0 +1,17 @@
+.containerNav{
+    background-color: rgba(246, 241, 194, 0.005);
+    
+}
+.lsitPro{
+    display: flex;
+    width: 90%;
+    margin: 0 0 0 2%;
+    padding: 2%;
+    background-color: rgba(187, 157, 117, 0.012);
+}
+.proItem{
+    width: 100%;
+    margin: 0 2%;
+    padding: 1%;
+    background-color: antiquewhite;
+}

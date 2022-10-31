@@ -1,0 +1,94 @@
+.mainFormV{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+.todo{
+    background-color: aliceblue;
+    width: 50%;
+    margin: 0 auto;
+}
+.formCont{
+    margin: 1%;
+    width: 48%;
+    box-sizing: border-box;
+    background-color: black;
+    border-radius: 5px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.formHead{
+    text-align: center;
+    color: white;
+    background-color: rgb(235, 196, 144);
+    padding: inherit;
+    font-size: xxx-large;
+    font-weight: 500;
+    width: 100%;
+    margin: 3% 1%;
+    text-shadow: 2px 3px 3px rgb(172, 125, 63);
+}
+.form{
+    width: 90%;
+}
+.write{
+    color: aliceblue;
+}
+.email,.name,.num{
+    color: white;
+    margin: 4% 0%;
+}
+label{
+    margin: 2%;
+}
+span{
+    font-size: x-large;
+}
+input[type="email"],input[type="text"],input[type="number"] {
+    padding: 5% 2%;
+    margin: 2% 0% 0% 0%;
+    border: none;
+    border-radius: 1px;
+    background-color: rgba(28, 27, 30, 0.859);
+    color: aliceblue;
+    font-size: larger;
+    width: 700px;
+    max-width: 435px;
+}
+.horLine{
+    height: 6px;
+    background-color: black;
+}
+.button{
+    width: 30%;
+    height: 60px;
+}
+
+
+@media (max-width:400px) {
+    .mainFormV{
+        flex-direction: column;
+    }
+    .todo{
+        width: 100%;
+        margin: 2% 0;
+    }
+    .formCont{
+        width: 98%;
+    }
+    span{
+        font-size: medium;
+    }
+    .formHead{
+        background-color: rgb(96, 96, 80);
+        font-size: 40px;
+        color: white;
+        text-shadow: 2px 3px 2px rgb(0, 0, 0);
+    }
+    input[type="email"],input[type="text"],input[type="number"] {
+        width: 300px;
+    }
+}
